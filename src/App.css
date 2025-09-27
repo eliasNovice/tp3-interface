@@ -1,0 +1,69 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+:root{ --bg:#0f172a; --panel:#111827; --muted:#9aa3af; --txt:#e5e7eb; --accent:#38bdf8; }
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Segoe UI,Inter,Roboto,sans-serif;background:#0f172a;color:var(--txt)}
+a{color:inherit;text-decoration:none}
+.nav{display:flex;align-items:center;justify-content:center;padding:14px 16px;background:#111827;border-bottom:1px solid #1f2937}
+.brand{font-weight:800;letter-spacing:.3px}
+.foot{color:#9aa3af;text-align:center;padding:20px 0;font-size:12px}
+.page{max-width:980px;margin:24px auto;padding:0 16px}
+.search{display:flex;gap:8px;justify-content:center;margin:12px 0 18px}
+.search input{flex:1;max-width:520px;padding:10px 12px;border-radius:10px;border:1px solid #243244;background:#0b1020;color:#e5e7eb}
+.search button{padding:10px 14px;border-radius:10px;border:1px solid #2b3445;background:#0b1222;color:#e5e7eb;cursor:pointer}
+.muted{color:#9aa3af}
+.error{color:#fecaca;background:#3a0d0d;border-left:4px solid #ef4444;padding:10px;border-radius:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
+.card{background:#101826;border:1px solid #1f2937;border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.poster{aspect-ratio:2/3;background:#0b1020;display:flex;align-items:center;justify-content:center}
+.poster img{width:100%;height:100%;object-fit:cover;display:block}
+.noPoster{color:#9aa3af;font-size:14px}
+.meta{padding:10px 12px}
+.meta h3{font-size:16px;margin:0 0 4px}
+.center{display:flex;justify-content:center;margin:16px 0}
+.details{display:grid;grid-template-columns:280px 1fr;gap:18px;margin-top:16px}
+.poster-lg{background:#0b1020;border:1px solid #1f2937;border-radius:12px;overflow:hidden}
+.poster-lg img{width:100%;height:auto;display:block}
+.info h1{margin:0 0 8px}
+.plot{margin-top:10px;line-height:1.6}
+@media (max-width:860px){ .details{grid-template-columns:1fr} }
